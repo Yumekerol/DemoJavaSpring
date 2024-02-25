@@ -1,0 +1,10 @@
+services:
+  db:
+    image: postgres:16-alpine
+    restart: always
+    environment:
+      POSTGRES_USER: spring
+      POSTGRES_PASSWORD: spring
+      POSTGRES_DB: spring
+    ports:
+      - 5432:5432
